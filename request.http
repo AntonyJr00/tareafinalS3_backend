@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Carlos Quispe",
+  "age": 34,
+  "email": "ysaucedo@gmail.com"
+}
+ 
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/639cda08c61312d3cc321bee HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/639cda08c61312d3cc321bee HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John Conway",
+  "age": 80,
+  "email": "johnconway@email.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/639cd5e72d7a167bf5c8d7a2 HTTP/1.1
